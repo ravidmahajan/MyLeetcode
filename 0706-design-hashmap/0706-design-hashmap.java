@@ -18,7 +18,8 @@ class MyHashMap {
     }
     
     private int checkBucket(int key){
-        return key % buckets;
+        return Integer.hashCode(key) % buckets;
+        //return key % buckets; 
     }
     
     private Node find(Node head, int key){
