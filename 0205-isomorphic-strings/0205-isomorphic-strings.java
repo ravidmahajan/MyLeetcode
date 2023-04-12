@@ -2,27 +2,35 @@ class Solution {
     public boolean isIsomorphic(String s, String t) {
      if(s.length() != t.length()) return false;
         
-        // 1 hashMap and 1 hasSet Solution
+        //2 hashMap Solution
         
         HashMap<Character, Character> sMap = new HashMap<>();
-        HashSet<Character> tSet = new HashSet<>();
+        HashMap<Character, Character> tMap = new HashMap<>();
         
-        for(int i = 0; i < t.length() ; i++){
+        for(int i = 0; i < s.length(); i++){
             char sChar = s.charAt(i);
             char tChar = t.charAt(i);
             
+            //sMap
             if(sMap.containsKey(sChar)){
-                if(sMap.get(sChar) != tChar){
+                // if present
+                if(sMap.get(sChar) != tChar)
                     return false;
-                }
             } else {
-                
-                if(tSet.contains(tChar)){
-                    return false;
-                }
+                // not present , insert 
                 sMap.put(sChar, tChar);
-                tSet.add(tChar);
             }
+            
+            //tMap
+            if(tMap.containsKey(tChar)){
+                // if present
+                if(tMap.get(tChar) != sChar)
+                    return false;
+            } else {
+                // not present , insert 
+                tMap.put(tChar, sChar);
+            }
+            
         }
         return true;
     }
