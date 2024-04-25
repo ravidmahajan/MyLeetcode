@@ -17,6 +17,7 @@ class MyQueue {
     }
     
     public int peek() {
+        if(empty()) return -1;
         if(out.isEmpty()){
           while(!in.isEmpty()){
             out.push(in.pop());
