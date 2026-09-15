@@ -14,6 +14,7 @@ leetcode problem solving
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0125-valid-palindrome](https://github.com/ravidmahajan/MyLeetcode/tree/main/0125-valid-palindrome/) | Easy |
 | [0412-fizz-buzz](https://github.com/ravidmahajan/MyLeetcode/tree/main/0412-fizz-buzz/) | Easy |
 ## Simulation
 | Problem Name | Difficulty |
@@ -23,4 +24,8 @@ leetcode problem solving
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1295-find-numbers-with-even-number-of-digits](https://github.com/ravidmahajan/MyLeetcode/tree/main/1295-find-numbers-with-even-number-of-digits/) | Easy |
+## Two Pointers
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0125-valid-palindrome](https://github.com/ravidmahajan/MyLeetcode/tree/main/0125-valid-palindrome/) | Easy |
 <!---LeetCode Topics End-->
